@@ -1,0 +1,338 @@
+ul{
+    list-style: none;
+}
+p.instruction {
+    margin: 0;
+    text-align: center;
+    font-size: 4vw;
+}
+th p{
+    text-align: center;
+}
+p.warning {
+    margin: 0;
+    text-align: center;
+    font-size: 4vw;
+    color: #cc3300; 
+}
+nav ul {
+    margin-left: 25%;
+}
+/*body setting for footer*/
+body{
+    position: relative;
+    height: 100%;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+.background {
+    background-color: rgb(241, 237, 237);
+    height: 100%;
+    overflow: scroll;
+}
+button a {
+    color: white;
+    white-space: normal;
+}
+table {  
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse: 
+    collapse; border-spacing: 0; 
+    width: 100%;
+    height: 100%;
+}
+
+td, th {  
+    border: 1px solid transparent; /* No more visible border */
+    height: 30px; 
+    transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+th {  
+    background: #DFDFDF;  /* Darken header a bit */
+    font-weight: bold;
+}
+
+td {  
+    background: #FAFAFA;
+    text-align: center;
+}
+
+/* Cells in even rows (2,4,6...) are one color */        
+tr:nth-child(even) td { background: #F1F1F1; }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
+tr:nth-child(odd) td { background: #FEFEFE; }  
+
+tr td:hover { background: #666; color: #FFF; }  
+/*set all panels information*/
+div.entirepanel{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+button {
+    margin-top: 3% !important;
+    height: 15%;
+}
+div.controlpanel {
+    height: 50%;
+    width: 100%;
+    overflow: scroll;
+    background-color: rgb(241, 237, 237);
+}
+div.resultpanel{
+    height: 50%;
+    width: 100%;
+    overflow: scroll;
+    background-color:rgb(241, 237, 237);
+}
+.card.col-lg-3.col-md-3.col-sm-6.col-xs-12{
+    width: 100%;
+}
+tbody {
+    margin: auto !important;
+    width: 100%;
+    height: 100%;
+}
+button.btn.btn-primary{
+    width: 100%;
+    height: 25%;
+    overflow: hidden;
+    margin-top:20% !important;
+}
+/*set al my bootsrap buttons*/
+button.btn.btn-primary.a{
+    padding: 2%;
+    text-align: center;
+}
+
+nav li{
+    font-size: 28;
+    color: aliceblue;
+    font-family: Impact, sans-serif;
+    margin: auto;
+    width: 100%;
+}
+main {
+    height: 48%;
+    width: 100%;
+}
+main#mainpagemain {
+    height: 100%;
+}
+div.row{
+    width: 100% !important;
+    height: 100%;
+    overflow: scroll !important;
+}
+.nav {
+    float:right;
+    width: 100%;
+    margin: auto;
+    margin-top:5%;
+    text-align: center;
+}
+div header {
+    height: 52%;
+    background-color: white; opacity: 0.9;
+    width: 100%;
+}
+button.btn.btn-primary#submitb {
+    width: 80%;
+    margin:auto !important;
+    margin-left: 10% !important;
+    height:20%;
+}
+nav {
+    font-size: 20;
+    font-family: 'Courier New', Courier, monospace;
+}
+header h1{
+    color: black;
+    font-family: Impact, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    margin: auto;
+}
+li a {
+    color: black;
+}
+div.flex-container {
+    width: 100%;
+    margin: auto;
+    margin-left:5%;
+    height: 100%;
+}
+.card {
+    background-color: bisque; opacity: 1.0 !important;
+    padding: .5rem 1rem;
+    margin:2rem;
+    border-radius: 20px !important;
+    height: 30em;
+    box-shadow: 3px 7px 8px rgb(0, 0, 0) !important;
+  }
+
+  section div {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+  }
+
+  div img {
+      width: 100%;
+      height: 50%;
+  }
+  footer{
+      height: 2%;
+      background-color: white;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      font-weight: bold;
+      color: black;
+      position: absolute;
+      bottom: 0;
+  }
+  footer.footer-container {
+      width: 100%;
+      margin-top: 20px;
+      position: bottom;
+  }
+  footer p{
+      margin-bottom: 0;
+      font-size: 0.5em;
+  }
+  /* handle special case for smaller screen*/
+  @media(min-width: 350px) {
+      header {
+        height: 55%;
+      }
+      main{
+          height: 45%;
+      }
+  }
+  /* handle special case for slightly larger screen*/
+  @media(min-width: 375px) {
+    li {
+        padding: 10px;
+    }
+}
+/*handle the special case of button in ipad*/
+  @media(min-width: 720px){
+     .background header {
+          height: 25%;
+      }
+      nav{
+          margin: auto;
+          margin-top: 5%;
+      }
+      ul li {
+        font-size: 40px;
+    }
+      nav ul li {
+          display: inline;
+      }
+      ul{
+          margin: auto;
+      }
+    button.btn.btn-primary{
+        margin:auto ;
+        width: 67%;
+        height: 35%;
+        margin-bottom: 10%;
+        opacity: 1;
+    }
+    nav ul {
+        margin-left: auto;
+    }
+    div.entirepanel{
+        display: flex;
+        height: 165%;
+    }
+    div.resultpanel {
+        height: 100%;
+    }
+  }
+  /*handle the large device like computer and ipad*/
+@media(min-width: 992px) {
+.background{
+    background-image: url("../img/college.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+div.resultpanel {
+    width: 70%;
+    background-color: white ;opacity:0.85;
+    height: 100%;
+}
+div.entirepanel{
+    display: flex;
+    flex-direction: row;
+    height: 165%;
+}
+label{
+    font-size: 2em !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: bold !important;
+    color:rgb(0, 0, 0) !important;
+}
+input.form-control,.mdb-select.md-form{
+    width: 25%;
+    height: 8%;
+}
+
+div.controlpanel{
+    width: 30%;
+    background-color: white;opacity: 0.85;
+    height: 100%;
+}
+button.btn.btn-primary{
+    margin:auto;
+    width: 90%;
+    height: 33%;
+    opacity: 1;
+    font-size: 2rem;
+}
+button.btn.btn-primary a:hover{
+    color: aliceblue;
+}
+
+nav li{
+    display: inline;
+    font-size: 40;
+    margin: 50px;
+    color: aliceblue;
+    font-family: Impact, sans-serif;
+}
+footer p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+button.btn.btn-primary#submitb {
+    width: 50%;
+    height: 10%;
+}
+.nav {
+    margin-top: 3%;
+}
+header:hover {
+    background-color:white; opacity: 1.0;
+}
+div.flex-container {
+    margin-left: 8%;
+}
+}
+
+
+
+
+  
+ 

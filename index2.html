@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head contains authors information, link to bootstrap, link to css file also description of my web -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>College Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Author" content="Xifei Wang">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="img/icon.png">
+    <meta name="description" content="free website to find information about college">
+</head>
+
+<body>
+    <!--set a background pic for large screen-->
+    <div class="background">
+        <header>
+            <!--Set a title and Nav bar-->
+            <h1>College Explorer</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html" rel="noopener">Explore</a></li>
+                    <li><a href="#Collections">Collections</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--devide the panel into control and result-->
+            <div class="entirepanel">
+                <!--control panel-->
+                <div class="controlpanel">
+                    <!--text input-->
+                    <div class="form-group">
+                        <label for="InputName">Enter Name Keyword</label>
+                        <input type="name" class="form-control" id="InputName" placeholder="Enter college name">
+                    </div>
+                    <!--text input-->
+                    <div class="form-group">
+                        <label for="InputName">Which state?</label>
+                        <input type="state" class="form-control" id="InputState" maxlength="2" placeholder="Enter two letters.">
+                    </div>
+                    <!--range bar-->
+                    <!-- <div class="form-group">
+                        <label for="InputName">Schools Tuition in Grands/Year</label>
+                        <div class="d-flex justify-content-center my-4">
+                            <span class="font-weight-bold blue-text mr-2 mt-1">7</span>
+                            <form class="range-field w-50">
+                                <input class="border-0" type="range" min="5" max="70" />
+                            </form>
+                            <span class="font-weight-bold blue-text ml-2 mt-1">50</span>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <label for="InputName">What's the maximum tuition you expect for a year?</label>
+                        <input type="number" class="form-control" id="InputTuition" placeholder="Enter a number">
+                    </div>
+                    <!--select dropdown-->
+                    <div class="form-group">
+                        <label for="InputName">What type of school would you like?</label>
+                        <div>
+                            <select class="mdb-select md-form" id="SearchReligion" searchable="Search here..">
+                                <option value="" disabled selected>Choose School Type</option>
+                                <option value="1">Religion</option>
+                                <option value="2">None-Religion</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="submitb">Submit</button>
+                </div>
+                <!--control panel with a table in it, will add more data into it in future and other stuff-->
+                <div class="resultpanel">
+                    <p class="instruction">Your result will be shown here</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--footer, includes personal information-->
+    <footer class="footer-container">
+        <p>Copyright@2019 Xifei Wang | Email: <a href="mailto:xifeiw@uw.edu">xifeiw@uw.edu</a></p>
+    </footer>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <!--for fetch polyfill-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <!-- include JavaScript file -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
